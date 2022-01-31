@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<p>This is a Demo Page on localhost!</p>
+		<button onclick="fetchProduct()">Click</button>
+
+		<script>
+			function fetchProduct(){
+			fetch('http://localhost:4000/products')
+			.then(response => response.json())
+  			.then(data => console.log(data));
+			}
+		</script>
+	</body>
+</html>
